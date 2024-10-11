@@ -8,7 +8,7 @@ const Home = () => {
   const images = [
     '/Images/homeimage1.jpg',
     '/Images/homeimage2.jpg',
-    '/Images/homeimage3.jpg',
+    '/Images/wedding8.jpg',
   ];
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Home = () => {
         const nextIndex = (currentIndex + 1) % images.length;
         return images[nextIndex];
       });
-    }, 4000); // Change image every 4 seconds
+    }, 2000); // Change image every 4 seconds
 
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, [images]);
