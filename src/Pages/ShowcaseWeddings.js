@@ -68,10 +68,10 @@ const ShowcaseWeddings = () => {
         {/* Grid Container for 3x3 layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 ">
           {weddings.map((wedding, index) => (
-            <div key={index} className="wedding-card bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+            <div key={index} className="wedding-card bg-[#F2E5BF] shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
               <img src={wedding.photo} alt={`${wedding.couple}'s wedding`} className="w-full h-56 object-cover" />
               <div className="p-4">
-                <h3 className="text-2xl font-semibold mb-2">{wedding.couple}</h3>
+                <h3 className="text-2xl font-semibold mb-2 font-dancing text-[#CB6040]">{wedding.couple}</h3>
                 <p className="text-sm italic">"{wedding.testimonial}"</p>
               </div>
             </div>
